@@ -1,0 +1,29 @@
+@import './const';
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    z-index: 1000;
+    border-bottom: 1px solid $text-color__navigation;
+    &__container-nav{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    &_fixed{
+        height: 5vh;
+        background: $background__burger url('../img/code.jpg');
+        overflow: hidden;
+        position: fixed;
+        @media (max-width: 320px){
+            &{
+                background: $background__burger url('https://media.giphy.com/media/OSM1PmTH6CtihRAqWx/giphy.gif') center;
+                height: 10vh;
+            }
+        }
+    }
+}

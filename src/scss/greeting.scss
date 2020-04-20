@@ -1,0 +1,48 @@
+@import './const';
+
+.greeting{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #2e324c url("../img/code.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+
+    &__inner{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 30vh;
+        bottom: 30vh;
+        z-index: 100;
+        @media (max-width: 768px){
+            &{
+                text-align: center;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+    &__header{
+        @extend %greeting__text;
+        font-size: 40px;
+
+        @media (max-width: 768px){
+            &{
+                font-size: 24px;
+            }
+        }
+    }
+    &__text{
+        @extend %greeting__text;
+        font-size: 28px;
+        margin-top: 5px;
+        line-height: 1.5;
+
+        @media (max-width: 768px){
+            &{
+                font-size: 20px;
+            }
+        }
+    }
+}

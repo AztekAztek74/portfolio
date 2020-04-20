@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Gotu&family=Roboto+Slab&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nikita Sizykh - portfolio</title>
+</head>
+<body>
+
+    <!-- Sprite -->
+<svg style="display: none">
+    <symbol id="github" viewBox="0 0 512 512">
+        <g>
+            <path d="m256 0c-140.699219 0-256 116.300781-256 257 0 139.882812 114.25 255 256 255 141.574219 0 256-114.945312 256-255 0-140.699219-115.300781-257-256-257zm45 477.5c-14.398438 3-29.699219 4.5-45 4.5s-30.601562-1.5-45-4.5v-70.199219c0-16.800781 4.5-22.800781 10.5-30.902343 3.054688-3.492188 4.898438-6.625 18.597656-27.296876l-23.097656-3.601562c-59.402344-8.699219-82.800781-39.601562-92.101562-63.601562-12-32.097657-5.699219-72.300782 15.902343-97.796876 3.300781-3.902343 6-10.503906 3.601563-17.402343-4.503906-13.800781-3.902344-35.699219-.902344-44.101563 15.90625 2.273438 32.261719 13.667969 45.902344 21.902344 6.285156 3.667969 9.582031 2.699219 12.597656 3 10.960938-2.28125 28.058594-7.800781 54.300781-7.800781 16.199219 0 33.300781 2.398437 50.101563 7.199219 3.003906-.070313 7.832031 2.484374 16.199218-2.398438 14.257813-8.6875 30.058594-19.691406 45.898438-21.902344 3 8.402344 3.601562 30.300782-.898438 44.101563-2.402343 6.898437.296876 13.5 3.601563 17.402343 21.597656 25.5 27.898437 65.699219 15.898437 97.796876-9.300781 24-32.699218 54.902343-92.101562 63.601562l-23.097656 3.601562c14.160156 21.367188 15.652344 23.929688 18.601562 27.296876 5.996094 8.101562 10.496094 14.101562 10.496094 30.902343zm30-8.699219v-61.5c0-17.101562-3.601562-28.5-8.402344-36.902343 45.601563-12.296876 78.003906-39.300782 92.402344-78 15.300781-40.796876 8.402344-89.398438-17.101562-123 4.503906-20.097657 4.503906-52.199219-6.296876-67.199219-4.800781-6.597657-11.402343-10.199219-19.800781-10.199219-.300781 0-.300781 0-.300781 0-23.261719 1.257812-41.570312 12.972656-61.199219 24.898438-18-4.800782-36.300781-7.199219-54.601562-7.199219-18.597657 0-37.199219 2.699219-53.695313 7.199219-20.664062-12.460938-38.796875-23.671876-62.703125-24.898438-7.5 0-14.101562 3.601562-18.902343 10.199219-10.796876 15-10.796876 47.101562-6.296876 67.199219-25.503906 33.601562-32.402343 82.5-17.101562 123 14.398438 38.699218 46.800781 65.703124 92.402344 78-3.722656 6.511718-6.667969 14.914062-7.828125 26.285156-9.210938 3.175781-17.199219 4.210937-24.628907 2.027344-7.835937-2.316407-13.941406-7.546876-19.246093-16.46875-11.914063-20.015626-32.207031-36.355469-55.3125-34.230469l2.636719 29.882812c10.699218-.980469 21.347656 10.339844 26.878906 19.671875 9.125 15.367188 21.417968 25.445313 36.546875 29.914063 11.230469 3.308593 21.496093 3.230469 32.550781.871093v40.449219c-87.300781-30.601562-151-114-151-211.800781 0-124.199219 101.800781-227 226-227s226 102.800781 226 227c0 97.800781-63.699219 181.199219-151 211.800781zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="linkedin" viewBox="0 0 512 512">
+        <g>
+            <path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 24 24">
+        <g>
+            <path d="m.415 11.196 5.869 2.925c.227.112.495.104.712-.023l5.224-3.037-3.162 2.802c-.161.143-.253.347-.253.562v6.825c0 .72.919 1.023 1.35.451l2.537-3.373 6.274 3.573c.44.253 1.004-.001 1.106-.504l3.913-19.5c.117-.586-.466-1.064-1.008-.846l-22.5 8.775c-.604.236-.643 1.081-.062 1.37zm21.83-8.249-3.439 17.137-5.945-3.386c-.324-.185-.741-.103-.971.201l-1.585 2.107v-4.244l8.551-7.576c.677-.599-.101-1.664-.874-1.21l-11.39 6.622-3.992-1.989z"/>
+        </g>
+    </symbol>
+
+    <symbol id="link" viewBox="0 0 512.092 512.092">
+        <g>
+            <g>
+                <path d="M312.453,199.601c-6.066-6.102-12.792-11.511-20.053-16.128c-19.232-12.315-41.59-18.859-64.427-18.859
+                    c-31.697-0.059-62.106,12.535-84.48,34.987L34.949,308.23c-22.336,22.379-34.89,52.7-34.91,84.318
+                    c-0.042,65.98,53.41,119.501,119.39,119.543c31.648,0.11,62.029-12.424,84.395-34.816l89.6-89.6
+                    c1.628-1.614,2.537-3.816,2.524-6.108c-0.027-4.713-3.87-8.511-8.583-8.484h-3.413c-18.72,0.066-37.273-3.529-54.613-10.581
+                    c-3.195-1.315-6.867-0.573-9.301,1.877l-64.427,64.512c-20.006,20.006-52.442,20.006-72.448,0
+                    c-20.006-20.006-20.006-52.442,0-72.448l108.971-108.885c19.99-19.965,52.373-19.965,72.363,0
+                    c13.472,12.679,34.486,12.679,47.957,0c5.796-5.801,9.31-13.495,9.899-21.675C322.976,216.108,319.371,206.535,312.453,199.601z"
+                    />
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M477.061,34.993c-46.657-46.657-122.303-46.657-168.96,0l-89.515,89.429c-2.458,2.47-3.167,6.185-1.792,9.387
+                    c1.359,3.211,4.535,5.272,8.021,5.205h3.157c18.698-0.034,37.221,3.589,54.528,10.667c3.195,1.315,6.867,0.573,9.301-1.877
+                    l64.256-64.171c20.006-20.006,52.442-20.006,72.448,0c20.006,20.006,20.006,52.442,0,72.448l-80.043,79.957l-0.683,0.768
+                    l-27.989,27.819c-19.99,19.965-52.373,19.965-72.363,0c-13.472-12.679-34.486-12.679-47.957,0
+                    c-5.833,5.845-9.35,13.606-9.899,21.845c-0.624,9.775,2.981,19.348,9.899,26.283c9.877,9.919,21.433,18.008,34.133,23.893
+                    c1.792,0.853,3.584,1.536,5.376,2.304c1.792,0.768,3.669,1.365,5.461,2.048c1.792,0.683,3.669,1.28,5.461,1.792l5.035,1.365
+                    c3.413,0.853,6.827,1.536,10.325,2.133c4.214,0.626,8.458,1.025,12.715,1.195h5.973h0.512l5.12-0.597
+                    c1.877-0.085,3.84-0.512,6.059-0.512h2.901l5.888-0.853l2.731-0.512l4.949-1.024h0.939c20.961-5.265,40.101-16.118,55.381-31.403
+                    l108.629-108.629C523.718,157.296,523.718,81.65,477.061,34.993z"/>
+            </g>
+        </g>
+    </symbol>
+</svg>
+
+    <!-- Container -->
+<div class="container">
+
+    <!-- Header -->
+<header class="header">
+    <div class ="header__container-nav">
+        <nav class="navigation">
+            <div class="navigation__container-button">
+                <button class="burger burger__line">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+            <div class="navigation__section-links">
+                <a onClick="smoothScroll(event, 'information')" class="navigation__link navigation__link_information" href="#">Информация</a>
+                <a onClick="smoothScroll(event, 'skills')" class="navigation__link navigation__link_skills" href="#">Навыки</a>
+                <a onClick="smoothScroll(event, 'portfolio')" class="navigation__link navigation__link_portfolio" href="#">Портфолио</a>
+            </div>
+        </nav>
+    </div>
+</header> <!-- /Header -->
+
+    <!-- Greeting -->
+<section class="greeting">
+    <div class="greeting__inner">
+        <h1 class="greeting__header">Здравствуйте!</h1>
+        <p class="greeting__text">Меня зовут Никита, </br> и я начинающий Frontend разработчик</p>
+    </div>
+</section><!-- /Greeting -->
+
+    <!-- Information -->
+<section class="information" id="information">
+    <div class="information__section-photo">
+        <div class="information__false-block-photo"></div>
+        <div class="information__true-block-photo">
+            <img class="information__photo" src="./img/photo/photo.jpg" alt="photo">
+        </div>
+    </div>
+    <div class="information__section-resume">
+        <h1 class="information__header">Про меня</h1>
+        <p class="information__text">Я начинающий frontend разработчик. Стараюсь практиковаться и совершенствовать свои навыки, а также приобретать более глубокие знания. Хочу, чтобы работа способствовала моему профессиональному росту.</p>
+        <p class="information__address">
+            <span class="information__inner-inf">Город проживания:</span>
+            <span class="information__inner-click">Красноярск</span>
+        </p>
+        <p class="information__telephone">
+            <span class="information__inner-inf">Телефон:</span>
+            <span >
+                <a class="information__inner-click" href="tel:+79620683017">+7 962 068 30 17</a>
+            </span>
+        </p>
+        <p class="information__e-mail">
+            <span class="information__inner-inf">Почта:</span>
+            <span >
+                <a class="information__inner-click" href="mailto:sizyh.nikita@bk.ru">sizyh.nikita@bk.ru</a>
+            </span>
+        </p>
+        <a class="information__inner-button" href="https://krasnoyarsk.hh.ru/resume/9e2a8429ff075e5f880039ed1f356b434f5574" target="_blank">Резюме</a>
+        <div class="information__social-container">
+                <!-- Social -->
+            <section class="social">
+                <a class="social__item" href="https://github.com/AztekAztek74?tab=repositories" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#github"></use>
+                    </svg>
+                </a>
+                <a class="social__item" href="https://www.linkedin.com/in/%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B0-%D1%81%D0%B8%D0%B7%D1%8B%D1%85-055267189/" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
+                </a>
+                <a class="social__item" href="https://t.me/AztekAztek74" target="_blank">
+                    <svg class="social__icon">
+                        <use xlink:href="#telegram"></use>
+                    </svg>
+                </a>
+            </section> <!-- /Social -->
+        </div>
+    </div>
+</section> <!-- /Information -->
+
+    <!-- Skills -->
+<section class="skills" id="skills">
+    <h1 class="skills__header">Мои навыки</h1>
+    <div class="skills__container">
+
+        <div class="skills__item skills__html">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>80 <span>%</span></h2>
+                    </div>
+                    <h3>HTML</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__css">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>70 <span>%</span></h2>
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__scss">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>60 <span>%</span></h2>
+                    </div>
+                    <h3>SCSS</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__new">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>70 <span>%</span></h2>
+                    </div>
+                    <h3>BEM</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__js">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>60 <span>%</span></h2>
+                    </div>
+                    <h3>JavaScript/JQuery</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__react">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>60 <span>%</span></h2>
+                    </div>
+                    <h3>React/Redux</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__ts">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>40 <span>%</span></h2>
+                    </div>
+                    <h3>TypeScript</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills__item skills__git">
+            <div class="skills__box">
+                <div class="skills__percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skills__number">
+                        <h2>60 <span>%</span></h2>
+                    </div>
+                    <h3>Git</h3>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- /skills__container -->
+</section> <!-- /Skills -->
+
+    <!-- Portfolio -->
+
+<section class="portfolio" id="portfolio">
+    <h1 class="portfolio__header">Портфолио</h1>
+    <div class="portfolio__container">
+        
+        <div class="portfolio__item">
+            <div class="portfolio__front">
+                <img class="portfolio__img" src="./img/works/search-youtube.png" alt="work">
+            </div>
+            <div class="portfolio__back">
+                <div class="portfolio__content">
+                    <h1 class="portfolio__project">YouTube - search</h1>
+                    <p class="portfolio__description">Поиск видео по YouTube API на React + Redux</p>
+                    
+                    <div class="portfolio__social">
+                        <a class="portfolio__ref" href="https://github.com/AztekAztek74/search-youtube" target="_blank">
+                            <svg class="portfolio__icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a>
+                        <a class="portfolio__ref" href="https://aztekaztek74.github.io/search-youtube/" target="_blank">
+                            <svg class="portfolio__icon">
+                                <use xlink:href="#link"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__front">
+                <img class="portfolio__img" src="./img/works/weather.png" alt="work">
+            </div>
+            <div class="portfolio__back">
+                <div class="portfolio__content">
+                    <h1 class="portfolio__project">Weather</h1>
+                    <p class="portfolio__description">Приложение прогноза погоды, с определением геолокации и выводом краткой информации о городе на React</p>
+                    
+                    <div class="portfolio__social">
+                        <a class="portfolio__ref" href="https://github.com/AztekAztek74/weather/" target="_blank">
+                            <svg class="portfolio__icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a>
+                        <a class="portfolio__ref" href="https://aztekaztek74.github.io/weather/" target="_blank">
+                            <svg class="portfolio__icon">
+                                <use xlink:href="#link"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__item">
+            <div class="portfolio__front">
+                <img class="portfolio__img" src="./img/works/todo.png" alt="work">
+            </div>
+            <div class="portfolio__back">
+                <div class="portfolio__content">
+                    <h1 class="portfolio__project">ToDo</h1>
+                    <p class="portfolio__description">ToDo лист на React + TypeScript</p>
+                    
+                    <div class="portfolio__social">
+                        <a class="portfolio__ref" href="https://github.com/AztekAztek74/search-youtube" target="_blank">
+                            <svg class="portfolio__icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a>
+                        <a class="portfolio__ref" href="https://aztekaztek74.github.io/search-youtube/" target="_blank">
+                            <svg class="portfolio__icon">
+                                <use xlink:href="#link"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section> <!-- /Portfolio -->
+
+</div> <!-- /Container -->
+</body>
+</html>

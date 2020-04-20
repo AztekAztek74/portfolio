@@ -1,0 +1,64 @@
+// Color
+$text-color__navigation: #ffffff;
+$text-color__greeting: #ffffff;
+$background__information: #22252c;
+$color-block__information: #ebfc04;
+$text-color__headers: #ebfc04;
+$information-color__information: #ffffff;
+$resume__button: #3bee04;
+$underline-hover__navigation: #b10606;
+$icon__social: #ebfc04;
+$icon-hover__social: #b10606;
+$text-hover__navigation: #dddbdb;
+$background__skills: #313741;
+$text-hover__skills:#ffffff ;
+$text__skills: #777777;
+$text-project__portfolio: #2e2e2e;
+$text-description__portfolio: #777777;
+$background__portfolio: #22252c;
+$background__burger: #070505;
+
+
+// Fonts
+%navigation__link{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $text-color__navigation;
+}
+
+%greeting__text{
+    font-family: 'Comfortaa', cursive;
+    color: $text-color__greeting;
+}
+
+%header-block{
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    color: $text-color__headers;
+}
+
+%information__text{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: $text-color__navigation;
+}
+
+%skills__text{
+    font-family: 'Gotu', serif;
+    text-transform: uppercase;
+    color: $text__skills;
+}
+
+%text-project__portfolio{
+    font-family: 'Yanone Kaffeesatz', cursive;
+    color: $text-project__portfolio;
+    font-size: 24px;
+}
+
+%text-description__portfolio{
+    font-family: 'Yanone Kaffeesatz', cursive;
+    color: $text-description__portfolio;
+    font-size: 18px;
+}

@@ -18,7 +18,6 @@ function burgerMenu (){
             background.classList.add('navigation__section-background_active')
             for(let el of links){
                 el.addEventListener('click', function(){
-                    console.log('for')
                     burger.classList.remove('burger__line_active')
                     navigation.classList.remove('navigation__section-links_active')
                     background.classList.remove('navigation__section-background_active')

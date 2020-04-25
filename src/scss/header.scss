@@ -7,6 +7,14 @@
     display: flex;
     z-index: 1000;
     border-bottom: 1px solid $text-color__navigation;
+
+    @media (max-width: 320px){
+        &{
+            position: fixed;
+            background: $background__burger url('https://media.giphy.com/media/OSM1PmTH6CtihRAqWx/giphy.gif') center;
+        }
+    }
+
     &__container-nav{
         display: flex;
         width: 100%;
@@ -21,8 +29,8 @@
         position: fixed;
         @media (max-width: 320px){
             &{
-                background: $background__burger url('https://media.giphy.com/media/OSM1PmTH6CtihRAqWx/giphy.gif') center;
                 height: 10vh;
+                background: $background__burger url('https://media.giphy.com/media/OSM1PmTH6CtihRAqWx/giphy.gif') center;
             }
         }
     }

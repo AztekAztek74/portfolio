@@ -8,7 +8,7 @@
     z-index: 1000;
     border-bottom: 1px solid $text-color__navigation;
 
-    @media (max-width: 320px){
+    @media (max-width: 420px){
         &{
             position: fixed;
             background: $background__burger url('https://media.giphy.com/media/OSM1PmTH6CtihRAqWx/giphy.gif') center;
@@ -27,7 +27,7 @@
         background: $background__burger url('../img/code.jpg');
         overflow: hidden;
         position: fixed;
-        @media (max-width: 320px){
+        @media (max-width: 420px){
             &{
                 height: 10vh;
                 background: $background__burger url('https://media.giphy.com/media/OSM1PmTH6CtihRAqWx/giphy.gif') center;

@@ -17,7 +17,7 @@
     &__section-photo{
         position: relative;
         width: 50%;
-        @media (max-width: 768px){
+        @media (max-width: 900px){
             &{
                 display: none;
             }
@@ -51,7 +51,7 @@
     &__section-resume{
         margin-top: 15vh;
         width: 50%;
-        @media (max-width: 768px){
+        @media (max-width: 900px){
             &{
                 margin-top: 0;
                 width: 100%;
@@ -64,7 +64,7 @@
         @extend %header-block;
         font-size: 24px;
 
-        @media (max-width: 768px){
+        @media (max-width: 900px){
             &{
                 text-align: center;
             }
